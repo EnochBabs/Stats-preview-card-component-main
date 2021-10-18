@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: hsl(233, 47%, 7%);
+        margin: 200px auto;
+        line-height: 1;
+        font-family: "Inter", sans-serif;
+        font-family: "Lexend Deca", sans-serif;
+        /* margin-left: 100px; */
+        /* width: 100px;
+        height: 100px; */
+      }
+      .container {
+        width: 50%;
+        height: 400px;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+        margin: 225px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* flex: wrap; */
+        /* align-items: center; */
+        padding-left: 40px;
+
+        /* align-items: center; */
+      }
+
+      .main-heading {
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.1;
+        margin-top: 50px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+      }
+      .in {
+        color: hsl(277, 64%, 61%);
+      }
+      .word {
+        font-size: 10px;
+        color: hsla(0, 0%, 100%, 0.6);
+      }
+      .main-text {
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 1.5;
+        /* margin-bottom: 70px; */
+        margin-right: 40px;
+        margin-bottom: 50px;
+      }
+
+      .one {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .one-2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .one-3 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flexit {
+        color: white;
+        display: flex;
+        /* justify-content: space-between; */
+        /* flex: start; */
+        gap: 50px;
+      }
+
+      .money {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .image {
+        height: 400px;
+        width: 1000px;
+        background-image: url(./images/image-header-desktop.jpg);
+        background-image: linear-gradient(right hsl(277, 64%, 61%));
+        /* linear-gradient(to right red, yellow); */
+
+        /* width: 100%;
+        height: 100%;*/
+        border-radius: 0px 10px 10px 0px;
+        background-size: cover;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 700px) {
+        body {
+          max-width: 700px;
+          /* height: 100vh; */
+          margin: auto;
+          height: 1200px;
+          width: 300px;
+        }
+
+        .container {
+          width: 100%;
+          height: 50%;
+          flex-direction: column-reverse;
+          border-radius: 10px;
+          padding-left: 0px;
+        }
+
+        .image {
+          background-image: url(./images/image-header-mobile.jpg);
+          width: 100%;
+          height: 200px;
+          /* margin-bottom: 30px; */
+          border-radius: 10px 10px 0 0;
+        }
+
+        .main-heading {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-top: 20px;
+          padding-bottom: 20px;
+          text-align: center;
+          padding: 40 0px 40 0px;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+        .main-text {
+          text-align: center;
+          margin-bottom: 20px;
+          margin-right: 10px;
+          margin-left: 10px;
+
+        }
+        .flexit {
+          margin-bottom: 20px;
+          flex-direction: column-reverse;
+          text-align: center;
+          gap: 10px;
+          /* align-items: center; */ * /;
+        }
+
+        /* .attribution {
+          text-align: center;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="internal1">
+        <h3 class="main-heading">
+          Get <span class="in">insights</span> that help your business grow.
+        </h3>
+        <p class="main-text">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="flexit">
+          <div class="one">
+            <span class="money">10k+</span>
+            <span class="word">COMPANIES</span>
+          </div>
+          <div class="one-2">
+            <span class="money">314</span>
+            <span class="word">TEMPLATES</span>
+          </div>
+          <div class="one-3">
+            <span class="money">12M+</span>
+            <span class="word">QUERIES</span>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <!-- <img src="./images/image-header-desktop.jpg" alt="market analyst" /> -->
+      </div>
+    </div>
+
+    >
+  </body>
+</html>
